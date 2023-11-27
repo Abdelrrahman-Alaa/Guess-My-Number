@@ -117,3 +117,43 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+/* تحسينات للميديا كويري */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .number {
+    font-size: 4rem;
+    width: 10rem;
+    padding: 2rem 0rem;
+  }
+
+  .between,
+  .again {
+    font-size: 1rem;
+  }
+
+  .guess {
+    font-size: 3rem;
+    padding: 1.5rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .message {
+    margin-bottom: 4rem;
+    height: 2rem;
+  }
+
+  .label-score,
+  .label-highscore {
+    font-size: 1.5rem;
+  }
+}
