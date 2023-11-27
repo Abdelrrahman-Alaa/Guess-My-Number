@@ -71,7 +71,7 @@ h1 {
 }
 
 .between {
-  font-size: 0.8rem;
+  font-size: 2rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -195,6 +195,7 @@ h1 {
   }
 
   .between {
+    font-size: 0.8rem;
     top: 2rem;
     right: 0.5rem;
   }
