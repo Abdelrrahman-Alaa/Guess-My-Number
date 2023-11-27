@@ -57,7 +57,7 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   document.querySelector(".score").textContent = 10;
   displayMessage("Start guessing...");
-  score = 20;
+  score = 10;
 });
 
 document.addEventListener("keydown", function (event) {
