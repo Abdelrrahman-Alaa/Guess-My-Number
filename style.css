@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -70,7 +70,7 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -118,8 +118,24 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* تحسينات للميديا كويري */
-@media only screen and (max-width: 600px) {
+/* Existing styles ... */
+
+/* Media Query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 20vh;
+  }
+
+  main {
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
   h1 {
     font-size: 3rem;
   }
@@ -127,33 +143,88 @@ h1 {
   .number {
     font-size: 4rem;
     width: 10rem;
-    padding: 2rem 0rem;
   }
 
-  .between,
+  .between {
+    top: 1rem;
+    right: 1rem;
+  }
+
   .again {
-    font-size: 1rem;
+    top: 0.5rem;
+    left: 0.5rem;
   }
 
   .guess {
-    font-size: 3rem;
-    padding: 1.5rem;
-    width: 15rem;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .btn {
-    font-size: 1.5rem;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .message {
     margin-bottom: 4rem;
-    height: 2rem;
   }
 
   .label-score,
   .label-highscore {
     font-size: 1.5rem;
+  }
+}
+
+/* Existing styles ... */
+
+/* Media Query for screens smaller than 600px (typical mobile devices) */
+@media only screen and (max-width: 600px) {
+  header {
+    height: 27.5vh;
+  }
+
+  main {
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .number {
+    font-size: 3rem;
+    width: 8rem;
+  }
+
+  .between {
+    top: 2rem;
+    right: 0.5rem;
+  }
+
+  .again {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .guess {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .message {
+    margin-bottom: 2rem;
+  }
+
+  .label-score,
+  .label-highscore {
+    font-size: 1.2rem;
+  }
+
+  .right {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
